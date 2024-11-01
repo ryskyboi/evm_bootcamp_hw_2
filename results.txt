@@ -1,0 +1,55 @@
+Last block number: 6989875n
+Getting Proposals: 
+{
+  index: 0,
+  name: 'Proposal 1',
+  proposal: [
+    '0x50726f706f73616c203100000000000000000000000000000000000000000000',
+    0n
+  ]
+}
+{
+  index: 1,
+  name: 'Proposal 2',
+  proposal: [
+    '0x50726f706f73616c203200000000000000000000000000000000000000000000',
+    1n
+  ]
+}
+{
+  index: 2,
+  name: 'Proposal 3',
+  proposal: [
+    '0x50726f706f73616c203300000000000000000000000000000000000000000000',
+    0n
+  ]
+}
+Querying for the Chairperson: 
+The Chairperson is 0x0B5455BaC0f3795b5927f37BC545c3eAE08c8b4a 
+The current winning proposal is Proposal 2
+Trying to give right to vote to my wallet:
+
+Transaction reverted: ContractFunctionExecutionError: The contract function "giveRightToVote" reverted with the following reason:
+Only chairperson can give right to vote.
+
+Contract Call:
+  address:   0x20d9CDe75E37F114f2c821758297AA9667D3bE14
+  function:  giveRightToVote(address voter)
+  args:                     (0x9af562555c7488eb25cb136f851e2b3f7f20397d)
+  sender:    0x9af562555c7488eb25cb136f851e2b3f7f20397d
+
+Delegating my vote to ab.eth:
+Transaction hash: 0xc76a5dc146fb6bba5264cc56c92fb84396fb00d921acba7e669a4febcfd2abf7
+Now Trying to vote:
+Transaction reverted: ContractFunctionExecutionError: The contract function "vote" reverted with the following reason:
+Already voted.
+
+Contract Call:
+  address:   0x20d9CDe75E37F114f2c821758297AA9667D3bE14
+  function:  vote(uint256 proposal)
+  args:          (0)
+  sender:    0x9af562555c7488eb25cb136f851e2b3f7f20397d
+
+
+Querying for the winner again: 
+The current winning proposal is still Proposal 2
